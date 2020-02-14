@@ -1,9 +1,42 @@
 {% extends "layouts/layout.index.html" %}
 
 {% block content %}
-
-
-
-
-
+<div class="main">
+    <div class="background"></div>
+    <div class="content">
+        <div class="contact">
+            <h1 class="title">Country Life Residence</h1>
+            <p class="text">İstanbul Caddesin’de Country Life Sitesinde Havuz cepheli, keyif dolu daireler sizleri bekliyor.</p>
+            <input class="input-info" type="text" placeholder="Adınız">
+            <input class="input-info" type="text" placeholder="Soyadınız">
+            <input class="input-info" type="email" placeholder="E Posta Adresiniz">
+            <input class="input-info" type="number" placeholder="Telefon Numaranız">
+            <label class="container">Bilgilendirme Yazısını Okudum
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Kampanyalardan haberdar olmak istiyorum.
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <a href="" class="button-a"><div class="submit-button">
+                <p class="button-text">
+                    Formu Gönder
+                </p>
+                <img src="../assets/img/message.png" class="button-img" />
+            </div></a>
+        </div>
+        <div class="communication">
+            <h1 class="phone">0212 322 88 19</h1>
+            <p class="mail">muhasebe@countryliferesidence.com</p>
+            <p class="mail">countrylifeteknik@countryliferesidence.com</p>
+            <div class="social-media">
+            <img src="../assets/img/face.png">
+            <img src="../assets/img/twitter.png">
+            <img src="../assets/img/instagram.png">
+            <img src="../assets/img/linkedin.png">
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
