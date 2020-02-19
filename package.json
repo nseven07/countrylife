@@ -36,6 +36,7 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-cssmin": "^0.2.0",
-    "gulp-header": "^2.0.9"
+    "gulp-header": "^2.0.9",
+    "gulp-minify": "^3.1.0"
   }
 }

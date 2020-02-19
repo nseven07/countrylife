@@ -15,6 +15,7 @@ const concat = require('gulp-concat');
 const connect = require('gulp-connect');
 const open = require('gulp-open');
 const header = require('gulp-header');
+const minify = require('gulp-minify')
 
 const templates = './src/templates/';
 const dist = './dist/';
@@ -65,9 +66,14 @@ function style() {
         .pipe(gulp.dest('./dist/assets/css'))
         .pipe(connect.reload());
 }
+function compress() {
+    return gulp.src('./src/assets/js/*.js')
+        .pipe(minify())
+        .pipe(gulp.dest('./dist/assets/js'))
 
+}
 
-const build = gulp.series(clean, copyImages,style, compile);
+const build = gulp.series(clean, copyImages,style, compile,compress);
 
 
 exports.clean = clean;
@@ -76,3 +82,4 @@ exports.compile = compile;
 exports.build = build;
 exports.default = build;
 exports.style = style;
+exports.compress = compress;
