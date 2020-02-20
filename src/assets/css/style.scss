@@ -192,7 +192,7 @@ input:focus{
 }
 .social-media{
     margin: auto;
-    width: 31%;
+    width: 88px;
 }
 .communication{
     position: fixed;
@@ -213,7 +213,6 @@ input:focus{
     display: flex;
     align-items: center;
 }
-
 .inp-label{
     border: solid;
     border-color: rgba(255, 255, 255 , 0.6);
@@ -223,19 +222,106 @@ input:focus{
 }
 .stick:hover{
     right: 290px;
-
-
-}
-.mapText{
-    font-size: 13px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
 }
 .mapTextLink{
     text-decoration: none;
     color: rgba(75, 79, 195, 1);
-
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-right: 15px;
+}
+.map{
+    padding-left: 5px;
 }
 @media screen and (max-width: 576px){
+    .contact{
+        width: 90%;
+        margin: auto;
+    }
+    .content{
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(236, 240, 241, 0.7);
+        backdrop-filter: blur(11px);
+        position: absolute;
+        right: 0;
+        min-height: 600px;                                                                                                                                                                                                                                     ;
+    }
+    .mail{
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Poppins', sans-serif;
+        margin: 5px;
+    }
+    .phone{
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        margin: 5px;
+    }
+    .social-media{
+        margin: auto;
+        width: 25%;
+    }
+    .stick{
+        display: none;
+    }
+    .stick:hover{
+        display: none;
+    }
+    .mapTextLink{
+        display: none;
+    }
+    .map{
+        display: none;
+    }
+}
+@media screen and (max-width: 330px){
+.social-media{
+    display: none;
+}
+    .communication{
+        bottom: 7%;
+    }
 
 }
+
+@media screen and (min-width: 1500px){
+    .content {
+        width: 501px;
+    }
+    .stick{
+        right: 353px;
+        top: 157px;
+    }
+    .contact{
+        width: 85%;
+    }
+    .stick:hover{
+        right: 500px;
+    }
+    .phone {
+        font-size: 24px;
+    }
+    .mail {
+        font-size: 18px;
+    }
+    .button-text {
+        font-size: 17px;
+    }
+    .container {
+        font-size: 17px;
+    }
+    .input-info {
+        font-size: 17px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .title {
+        font-size: 21px;
+    }
+}
+
